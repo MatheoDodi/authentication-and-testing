@@ -2,9 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const CommentList = ({ comments }) => (
-  <div>
-    {comments.length > 0 && comments.map(comment => <div>{comment}</div>)}
-  </div>
+  <ul>{comments.length > 0 && comments.map(comment => <li>{comment}</li>)}</ul>
 );
 
 const mapStateToProps = ({ comments }) => ({

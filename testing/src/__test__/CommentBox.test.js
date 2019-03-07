@@ -13,6 +13,10 @@ beforeEach(() => {
   );
 });
 
+afterEach(() => {
+  wrapped.unmount();
+});
+
 it('has a text area and a button', () => {
   wrapped.find('button');
   wrapped.find('textarea');
